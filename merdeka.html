@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	body{
+		background: #eee;
+	}
+
+	section{
+		/*border:1px solid #444;
+		margin:30px;*/
+		padding: 30px;
+	}
+	article{
+		width:600px;
+		height: 350px;
+		margin: auto;
+		position: relative;
+	}
+
+	article:after, article:before{
+		content: "";
+		background: #fff;
+		width: 600px;
+		height: 400px;
+		overflow: hidden;
+
+		position: absolute;
+		top: 0px;
+		z-index: -2;
+
+		box-shadow: 0 0 10px #444;
+	}
+	article:after{
+		-webkit-transform: rotateZ(-2.5deg);
+		
+	}
+
+	article:before{
+		-webkit-transform: rotateZ(3deg);
+		-o-transform: rotate(3deg);
+		transform: rotateZ(3deg);
+	}
+
+	article img{
+		width: 100%;
+	}
+
+	</style>
+</head>
+<body>
+	<section>
+		<article>
+			<img src="home.jpg" alt="">
+		</article>
+	</section>
+</body>
+</html>
